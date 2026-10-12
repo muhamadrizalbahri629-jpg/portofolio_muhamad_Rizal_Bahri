@@ -1,84 +1,40 @@
-/* Header & Navbar */
-.navbar {
-    background-color: var(--bg-card);
-    border-bottom: 2px solid var(--green-accent);
-}
-
-.logo {
-    color: var(--text-primary);
-    font-weight: bold;
-}
-
-.nav-links a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--green-light); /* Sentuhan Hijau saat menu di-hover */
-}
-
-/* Teks Sorotan (Highlight Nama) */
-.highlight {
-    color: #e63946; /* Merah Maroon Terang / Crimson agar kontras di latar gelap */
-}
-
-/* Tombol Utama (Aksen Merah Maroon & Teks Putih) */
-.btn {
-    background-color: var(--maroon-accent);
-    color: var(--text-primary);
-    padding: 10px 24px;
-    border-radius: 25px;
-    border: none;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-    background-color: var(--maroon-hover);
-    transform: translateY(-2px);
-}
-
-/* Tombol Garis Tepi (Outline - Aksen Hijau) */
-.btn-outline {
-    background: transparent;
-    border: 2px solid var(--green-light);
-    color: var(--text-primary);
-}
-
-.btn-outline:hover {
-    background-color: var(--green-accent);
-    color: var(--text-primary);
-}
-
-/* Kartu / Box (Pengalaman, Keahlian, Hobi, Biodata) */
-.experience-card, .skill-card, .hobby-card, .bio-item, .evaluation-note {
-    background-color: var(--bg-card);
-    border: 1px solid var(--green-accent); /* Border Hijau */
-    border-left: 4px solid var(--maroon-accent); /* Garis Samping Maroon */
-    border-radius: 10px;
-    color: var(--text-primary);
-}
-
-.experience-card:hover, .hobby-card:hover {
-    border-color: var(--green-light);
-    transform: translateY(-5px);
-}
-
-/* Ikon & Judul */
-.hobby-card i, .bio-item i, .skill-card i {
-    color: var(--green-light); /* Ikon berwarna Hijau Terang */
-}
-
-.exp-header h3, .bio-item strong {
-    color: var(--text-primary);
-}
-
-/* Foto Profil Ring Border */
-.profile-img {
-    border: 3px solid var(--green-light);
-    box-shadow: 0 0 15px rgba(139, 0, 0, 0.4); /* Efek glow maroon halus */
-}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+body { background-color: #0d0d0d; color: #ffffff; line-height: 1.6; }
+header { position: fixed; top: 0; width: 100%; background: rgba(13, 13, 13, 0.95); border-bottom: 1px solid #222; z-index: 1000; padding: 15px 50px; }
+.navbar { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: auto; }
+.logo { font-size: 1.5rem; font-weight: 700; color: #fff; }
+.logo span { color: #ff2a74; }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { color: #ccc; text-decoration: none; font-weight: 500; transition: 0.3s; }
+.nav-links a:hover { color: #ff2a74; }
+.hero-section { min-height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; padding: 100px 20px 50px; }
+.img-container { width: 170px; height: 170px; margin: 0 auto 20px; border-radius: 50%; padding: 5px; background: linear-gradient(45deg, #ff2a74, #ff75a0); box-shadow: 0 0 25px rgba(255, 42, 116, 0.4); }
+.profile-img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.highlight { color: #ff2a74; }
+.subtitle { color: #aaa; margin-bottom: 25px; }
+.hero-buttons { display: flex; justify-content: center; gap: 15px; }
+.btn { padding: 10px 22px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+.btn-primary { background: #ff2a74; color: #fff; box-shadow: 0 4px 15px rgba(255, 42, 116, 0.3); }
+.btn-primary:hover { background: #e01e63; }
+.btn-outline { border: 2px solid #ff2a74; color: #fff; }
+.btn-outline:hover { background: #ff2a74; }
+.section { max-width: 900px; margin: auto; padding: 60px 20px; }
+.section-title { text-align: center; font-size: 2rem; margin-bottom: 30px; }
+.section-title span { color: #ff2a74; }
+.card-box { background: #161616; padding: 25px; border-radius: 12px; border: 1px solid #282828; }
+.note-box { margin-top: 20px; background: #201317; border-left: 4px solid #ff2a74; padding: 15px; border-radius: 6px; display: flex; gap: 12px; align-items: flex-start; }
+.note-box i { color: #ff2a74; font-size: 1.2rem; margin-top: 3px; }
+.exp-card { position: relative; }
+.exp-badge { position: absolute; top: 20px; right: 20px; background: #ff2a74; color: #fff; padding: 4px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: 600; }
+.sub-text { color: #888; font-size: 0.9rem; margin-bottom: 15px; }
+.grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+.grid-container3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.grid-card { background: #161616; padding: 25px 15px; border-radius: 12px; text-align: center; border: 1px solid #282828; transition: 0.3s; }
+.grid-card:hover { border-color: #ff2a74; transform: translateY(-5px); }
+.card-icon { font-size: 2.5rem; color: #ff2a74; margin-bottom: 12px; }
+.grid-card p { font-size: 0.85rem; color: #888; margin-top: 5px; }
+.contact-wrapper { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+.contact-card { display: flex; align-items: center; gap: 15px; background: #161616; padding: 15px 25px; border-radius: 30px; text-decoration: none; color: #fff; border: 1px solid #282828; transition: 0.3s; }
+.contact-card i { font-size: 1.3rem; color: #ff2a74; }
+.contact-card:hover { border-color: #ff2a74; background: #ff2a74; color: #fff; }
+footer { text-align: center; padding: 25px; border-top: 1px solid #222; color: #666; font-size: 0.85rem; }
