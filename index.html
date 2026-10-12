@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>Portofolio - Muhamad Rizal Bahri</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Icon dari FontAwesome -->
+    <!-- Font Awesome untuk Ikon Media Sosial, Kontak & Keahlian -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
     <header>
         <nav class="navbar">
-            <h1 class="logo">Portofolio</h1>
+            <div class="logo">Portofolio</div>
             <ul class="nav-links">
+                <li><a href="#hero">Beranda</a></li>
                 <li><a href="#about">Tentang</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
                 <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#hobbies">Hobi</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
@@ -26,46 +27,123 @@
     <!-- Hero Section / Profil Utama -->
     <section id="hero" class="hero-section">
         <div class="hero-content">
-            <img src="profil.jpg.jpeg" alt="Foto Profil" class="profile-img">
+            <img src="profil.jpeg" alt="Foto Profil" class="profile-img">
             <h2>Halo, Saya <span class="highlight">Muhamad Rizal Bahri</span></h2>
             <p>Mahasiswa Sistem Informasi | Web Developer Enthusiast</p>
-            <a href="#contact" class="btn">Hubungi Saya</a>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Hubungi Saya</a>
+                <a href="https://www.instagram.com/rizal_bahri13?obrf=bm83MHFqbmkzdXpm&utm_source=qr" target="_blank" class="btn btn-outline"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
         </div>
     </section>
 
     <!-- Section Tentang Saya -->
     <section id="about" class="section">
         <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang mahasiswa yang tertarik dalam pengembangan web, manajemen data, dan desain antarmuka pengguna.</p>
+        <p>
+            Saya adalah seorang mahasiswa Sistem Informasi yang berdedikasi dan terus belajar dalam pengembangan web serta manajemen data. 
+            Saya memiliki komitmen tinggi dalam menyelesaikan setiap pekerjaan dengan hasil terbaik.
+        </p>
+
+        <!-- Informasi Biodata Pribadi -->
+        <div class="bio-info">
+            <div class="bio-item">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                    <strong>Tempat, Tanggal Lahir:</strong>
+                    <span>Karawang, 06 Desember 2006</span>
+                </div>
+            </div>
+            <div class="bio-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <strong>Alamat:</strong>
+                    <span>Kp. Sarijaya RT/RW 017/008, Kel. Puseurjaya, Kec. Telukjambe Timur, Karawang</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="evaluation-note">
+            <strong>Catatan Evaluasi Diri:</strong> Mampu bekerja secara mandiri maupun tim. Meskipun manajemen waktu merupakan area yang terus saya tingkatkan, saya selalu menyusun prioritas dan berusaha semaksimal mungkin untuk menyelesaikan tugas tepat waktu dengan hasil yang optimal.
+        </p>
+    </section>
+
+    <!-- Section Pengalaman Kerja -->
+    <section id="experience" class="section">
+        <h2>Pengalaman Kerja</h2>
+        <div class="experience-card">
+            <div class="exp-header">
+                <h3>Pengalaman BUMN</h3>
+                <span class="company">Perum Peruri (Perusahaan Umum Percetakan Uang Republik Indonesia)</span>
+            </div>
+            <p>
+                Pernah berpengalaman kerja di Perum Peruri BUMN, berkontribusi dalam mendukung operasional kerja, pengelolaan administrasi, serta koordinasi tugas secara profesional dan disiplin.
+            </p>
+        </div>
     </section>
 
     <!-- Section Keahlian -->
     <section id="skills" class="section">
         <h2>Keahlian</h2>
         <div class="skills-grid">
-            <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
-            <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
-            <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
-            <div class="skill-card"><i class="fab fa-php"></i> PHP</div>
-            <div class="skill-card"><i class="fas fa-database"></i> MySQL</div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <span>HTML5 & CSS3</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-file-word"></i>
+                <span>Microsoft Word</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-file-powerpoint"></i>
+                <span>Microsoft PowerPoint</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-file-excel"></i>
+                <span>Basic Microsoft Excel</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Hobi & Minat -->
+    <section id="hobbies" class="section">
+        <h2>Hobi & Minat</h2>
+        <div class="hobbies-grid">
+            <div class="hobby-card">
+                <i class="fas fa-table-tennis-paddle-ball"></i>
+                <h3>Bulu Tangkis</h3>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-bicycle"></i>
+                <h3>Bersepeda</h3>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-running"></i>
+                <h3>Jalan Santai (Jogging)</h3>
+            </div>
         </div>
     </section>
 
     <!-- Section Kontak -->
     <section id="contact" class="section">
-        <h2>Kontak</h2>
-        <p>Mari terhubung melalui media sosial atau email:</p>
-        <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <h2>Hubungi Saya</h2>
+        <p>Silakan hubungi saya melalui telepon, WhatsApp, email, atau media sosial berikut:</p>
+        <div class="contact-links">
+            <a href="https://wa.me/6282164438196" target="_blank" class="contact-item">
+                <i class="fas fa-phone-alt"></i> 082164438196
+            </a>
+            <a href="mailto:muhamadrizalbahri12@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i> muhamadrizalbahri12@gmail.com
+            </a>
+            <a href="https://www.instagram.com/rizal_bahri13?obrf=bm83MHFqbmkzdXpm&utm_source=qr" target="_blank" class="contact-item">
+                <i class="fab fa-instagram"></i> @rizal_bahri13
+            </a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Portofolio Saya. All rights reserved.</p>
+        <p>&copy; 2026 Muhamad Rizal Bahri. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
